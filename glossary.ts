@@ -1,0 +1,63 @@
+// Short glossary of technical terms for the prototype.
+// Sample content: a qualified teacher should check the wording before classroom use.
+
+export interface Term {
+  term: string;
+  meaning: string;
+  area: string;
+}
+
+export const GLOSSARY: Term[] = [
+  { term: 'ADC (analog-to-digital converter)', area: 'Electronics', meaning: 'A circuit that turns a changing voltage, such as from a sensor, into a number a microcontroller can use.' },
+  { term: 'BIOS / UEFI', area: 'Computer systems', meaning: 'Firmware stored on the motherboard. It checks the hardware when the computer starts and then hands control to the operating system.' },
+  { term: 'Boot', area: 'Computer systems', meaning: 'The start-up process, from pressing the power button until the operating system is ready to use.' },
+  { term: 'Breadboard', area: 'Electronics', meaning: 'A board with connected holes for building practice circuits without soldering.' },
+  { term: 'CMOS battery', area: 'Computer systems', meaning: 'A small coin battery on the motherboard that keeps the clock and some BIOS settings when the computer is off.' },
+  { term: 'Command line', area: 'Operating systems', meaning: 'A text screen where you type commands to the computer instead of clicking.' },
+  { term: 'CPU (processor)', area: 'Computer systems', meaning: 'The part of the computer that carries out instructions. It is often called the brain of the computer.' },
+  { term: 'Current', area: 'Electronics', meaning: 'The flow of electric charge through a circuit. It is measured in amperes (amps).' },
+  { term: 'Dashboard', area: 'IoT', meaning: 'A screen that shows readings or status, such as temperature over time.' },
+  { term: 'DNS', area: 'Networking', meaning: 'A service that turns a name such as a website address into the number address a computer needs.' },
+  { term: 'Driver', area: 'Operating systems', meaning: 'Software that lets the operating system work with a piece of hardware such as a printer.' },
+  { term: 'Firmware', area: 'Computer systems', meaning: 'Software stored inside a hardware device that controls how that device works.' },
+  { term: 'GPIO pin', area: 'Embedded systems', meaning: 'A pin on a microcontroller that your program can use as an input or an output.' },
+  { term: 'Hard disk drive (HDD)', area: 'Computer systems', meaning: 'Storage that keeps data on spinning magnetic disks. It is slower than an SSD and has moving parts.' },
+  { term: 'IP address', area: 'Networking', meaning: 'A number that identifies a device on a network so that data can be sent to it.' },
+  { term: 'Linux', area: 'Operating systems', meaning: 'A family of free operating systems widely used on servers and small devices.' },
+  { term: 'Microcontroller', area: 'Embedded systems', meaning: 'A small computer on one chip that runs a program and controls things such as LEDs, motors and sensors.' },
+  { term: 'Motherboard', area: 'Computer systems', meaning: 'The main circuit board that connects the processor, memory, storage and other parts.' },
+  { term: 'MQTT', area: 'IoT', meaning: 'A light message system that small devices use to send readings to a server and receive commands.' },
+  { term: 'Multimeter', area: 'Electronics', meaning: 'A tool for measuring voltage, current, resistance and for testing whether a connection is continuous.' },
+  { term: 'Operating system', area: 'Operating systems', meaning: 'The main software that manages the hardware and lets programs run, such as Windows, Linux or Android.' },
+  { term: 'Permission', area: 'Operating systems', meaning: 'A rule that says who may read, change or run a file or folder.' },
+  { term: 'Phishing', area: 'Cybersecurity', meaning: 'A trick that uses a fake message or website to make someone give away a password or other private information.' },
+  { term: 'Ping', area: 'Networking', meaning: 'A simple test that checks whether another device can be reached over the network.' },
+  { term: 'POST (power-on self-test)', area: 'Computer systems', meaning: 'A quick check of the main hardware that the computer does at start-up. Beep codes or messages can report problems.' },
+  { term: 'PSU (power supply unit)', area: 'Computer systems', meaning: 'The part that changes mains electricity into the lower voltages the computer parts need. Never open one.' },
+  { term: 'RAM', area: 'Computer systems', meaning: 'Fast, temporary memory that holds the programs and data in use. Its contents are lost when the power is off.' },
+  { term: 'Resistor', area: 'Electronics', meaning: 'A component that limits the flow of current in a circuit.' },
+  { term: 'Router', area: 'Networking', meaning: 'A device that passes data between different networks, for example your local network and the internet.' },
+  { term: 'Sensor', area: 'IoT', meaning: 'A device that measures something in the world, such as temperature or light, and turns it into an electrical signal.' },
+  { term: 'Servo motor', area: 'Robotics', meaning: 'A motor that can turn to a chosen angle and hold it, often used for arms and steering.' },
+  { term: 'SSD (solid-state drive)', area: 'Computer systems', meaning: 'Storage that keeps data in memory chips. It is faster than a hard disk and has no moving parts.' },
+  { term: 'Switch (network)', area: 'Networking', meaning: 'A device that connects several computers in one local network and sends data only to the device it is meant for.' },
+  { term: 'Virtual machine', area: 'Operating systems', meaning: 'A computer simulated by software, which lets you practise installing and testing systems safely.' },
+  { term: 'Voltage', area: 'Electronics', meaning: 'The electrical push that makes current flow. It is measured in volts.' },
+  { term: 'API', area: 'Software development', meaning: 'A set of rules that lets one program ask another program or service for data or actions.' },
+  { term: 'Boolean', area: 'Software development', meaning: 'A value that is either true or false.' },
+  { term: 'Bug', area: 'Software development', meaning: 'A mistake in a program that makes it behave in a way nobody intended.' },
+  { term: 'CSS', area: 'Software development', meaning: 'The language that controls how a web page looks: colours, spacing and layout.' },
+  { term: 'Database', area: 'Software development', meaning: 'An organised store of data, usually kept in tables of rows and columns.' },
+  { term: 'Default gateway', area: 'Networking', meaning: 'The address of the router that a device uses to reach other networks.' },
+  { term: 'DHCP', area: 'Networking', meaning: 'A service that gives devices their IP address settings automatically.' },
+  { term: 'Firewall', area: 'Cybersecurity', meaning: 'A tool that allows or blocks network traffic according to rules.' },
+  { term: 'Function', area: 'Software development', meaning: 'A named block of code that can be reused, with inputs and sometimes a result.' },
+  { term: 'Git', area: 'Software development', meaning: 'A tool that records the history of your code so you can save snapshots and work with others.' },
+  { term: 'HTML', area: 'Software development', meaning: 'The language that gives a web page its structure and content.' },
+  { term: 'JavaScript', area: 'Software development', meaning: 'A programming language that makes web pages react to clicks and user input.' },
+  { term: 'Loop', area: 'Software development', meaning: 'A way to repeat a set of steps in a program.' },
+  { term: 'SQL', area: 'Software development', meaning: 'The language used to read and change data in a relational database.' },
+  { term: 'Subnet mask', area: 'Networking', meaning: 'A number that shows which part of an IP address names the network and which part names the device.' },
+  { term: 'Variable', area: 'Software development', meaning: 'A named place in memory where a program keeps a value.' },
+  { term: 'WPA2 / WPA3', area: 'Cybersecurity', meaning: 'Current security methods that protect a Wi-Fi network with a password and encryption.' },
+];
